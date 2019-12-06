@@ -48,7 +48,7 @@ module.exports = {
       myPageHeader: 'My Bank App',
       pageHeader: 'Bank App',
       template: './src/index.html',
-      filename: './dist/index.html',
+      filename: './index.html',
       chunks: ['app']
     })
   ]
