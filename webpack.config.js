@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    extensions: ['.js', '.scss']
+    extensions: ['.js', '.scss'],
   },
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin({})],
@@ -18,7 +18,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080,
-    hot: true
+    hot: true,
   },
   module: {
     rules: [
@@ -29,20 +29,20 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].css',
-              outputPath: 'assets/css/'
+              outputPath: 'assets/css/',
             },
           },
           {
-            loader: 'extract-loader'
+            loader: 'extract-loader',
           },
           {
-            loader: 'css-loader?-url'
+            loader: 'css-loader?-url',
           },
           {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader',
           },
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
           }
         ]
       },
@@ -55,7 +55,7 @@ module.exports = {
       pageHeader: 'Bank App',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['app']
+      chunks: ['app'],
     })
   ]
 }
