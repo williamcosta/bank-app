@@ -4,15 +4,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: ['./src/assets/scss/index.scss'],
+  entry: ['webpack/hot/dev-server', './src/assets/scss/index.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    extensions: ['.scss']
+    extensions: ['.js', '.scss']
   },
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin({})],
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+    hot: true
   },
   module: {
     rules: [
