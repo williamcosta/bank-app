@@ -1,5 +1,11 @@
 .navigation {
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
     padding: 18px 24px;
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

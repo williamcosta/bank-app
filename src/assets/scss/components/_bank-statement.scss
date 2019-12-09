@@ -1,0 +1,20 @@
+.bank-statement {
+    &__header {
+        background-color: #F0F4F8;
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 24px;
+    }
+
+    &__text {
+        color: #888E93;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+
+        &--strong {
+            font-weight: 700;
+        }
+    }
+
+}
