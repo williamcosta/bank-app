@@ -18,7 +18,15 @@
     &__item {
         display: flex;
         flex-direction: row;
-        padding: 24px;
+        padding: 12px 24px;
+
+        &:first-child {
+            padding-top: 24px;
+        }
+
+        &:last-child {
+            padding-bottom: 24px;
+        }
     }
 
 }
