@@ -5,10 +5,19 @@
         font-size: 14px;
         line-height: 20px;
         transition: all .3s ease-in-out;
+        align-items: center;
 
         &:hover {
             color: #FE3E6D;
             border-bottom: 1px solid #FE3E6D;
+        }
+
+        &--no-effect {
+            border: none;
+
+            &:hover {
+                border: none;
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
     <head>
         <title>My Bank App</title>
         <link rel="stylesheet" href="./assets/css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <main class="wrapper">
@@ -11,16 +11,34 @@
                 <h1>Extrato</h1>
             </header>
             <nav class="navigation">
-                <ul>
-                    <li>Tudo</li>
-                    <li>Entrada</li>
-                    <li>Saída</li>
-                    <li>Futuro</li>
-                    <li>
-                        <img src="" alt="Filtrar Extrada">
+                <ul class="navigation__wrapper menu">
+                    <li class="menu__item">Tudo</li>
+                    <li class="menu__item">Entrada</li>
+                    <li class="menu__item">Saída</li>
+                    <li class="menu__item">Futuro</li>
+                    <li class="menu__item">
+                        <img src="" alt="Filtrar Extrato">
                     </li>
                 </ul>
             </nav>
+            <section class="bank-statement">
+                <header class="bank-statement__header">
+                    <span  class="bank-statement__text">Hoje - 6 de Agosto</span>
+                    <span class="bank-statement__text bank-statement__text--strong">R$ 3.446,00</span>
+                </header>
+                <header class="bank-statement__header">
+                    <span  class="bank-statement__text">Segunda-feira - 2 de Agosto</span>
+                    <span class="bank-statement__text bank-statement__text--strong">R$ 3.110,08</span>
+                </header>
+                <header class="bank-statement__header">
+                    <span  class="bank-statement__text">Sexta-feira - 30 de Julho</span>
+                    <span class="bank-statement__text bank-statement__text--strong">R$ 3.050,30</span>
+                </header>
+                <header class="bank-statement__header">
+                    <span  class="bank-statement__text">Ontem - 5 de Agosto</span>
+                    <span class="bank-statement__text bank-statement__text--strong">R$ 3.124,34</span>
+                </header>
+            </section>
         </main>
     </body>
 </html>

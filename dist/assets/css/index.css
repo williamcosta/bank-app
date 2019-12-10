@@ -53,12 +53,42 @@ body {
   height: 100vh; }
 .header {
   background-color: #F0F4F8;
+  box-sizing: border-box;
   padding: 16px;
   width: 100%; }
 .navigation {
+  box-sizing: border-box;
+  padding: 18px 24px;
+  width: 100%; }
+.navigation__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+.menu__item {
+  color: #888E93;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+.menu__item:hover {
+    color: #FE3E6D;
+    border-bottom: 1px solid #FE3E6D; }
+.bank-statement__header {
+  background-color: #F0F4F8;
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  padding: 18px 24px; }
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 6px 24px; }
+.bank-statement__text {
+  color: #888E93;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px; }
+.bank-statement__text--strong {
+    font-weight: 700; }

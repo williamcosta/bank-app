@@ -1,18 +1,28 @@
 @import 'reset-css';
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   display: flex;
   font-family: 'Lato', sans-serif;
   justify-content: center;
+  background-color: #000;
 }
 
 .wrapper {
-  max-width: 375px;
-  width: 100%;
+  border-radius: 10px;
+  background-color: #FFF;
   height: 100vh;
+  max-width: 375px;
+  overflow-x: auto;
+  width: 100%;
 }
 
 @import './components/header';
 @import './components/navigation';
 @import './components/menu';
 @import './components/bank-statement';
+@import './components/bank-position';

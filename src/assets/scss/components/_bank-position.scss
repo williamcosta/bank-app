@@ -1,0 +1,50 @@
+.bank-position {
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        height: 24px;
+        margin-right: 16px;
+        width: 24px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    &__hour {
+        align-self: center;
+        color: #888E93;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: auto;
+    }
+
+    &__text {
+        color: #3B3B3B;
+        font-size: 14px;
+        line-height: 20px;
+
+        strong {
+            font-weight: 700;
+        }
+
+        &--big {
+            font-size: 16px;
+        }
+
+        &--gray {
+            color: #888E93;
+        }
+
+        &--highlight {
+            color: #1EA4F3;
+        }
+
+        &--overline {
+            text-decoration: line-through;
+        }
+    }
+}

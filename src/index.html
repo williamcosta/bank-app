@@ -7,8 +7,8 @@
     <body>
         <main class="wrapper">
             <header class="header">
-                <img src="../public/images/svg/chevron-left.svg" alt="Voltar" />
-                <h1>Extrato</h1>
+                <img src="./assets/images/svg/chevron-left.svg" alt="Voltar" />
+                <h1 class="header__text">Extrato</h1>
             </header>
             <nav class="navigation">
                 <ul class="navigation__wrapper menu">
@@ -16,8 +16,8 @@
                     <li class="menu__item">Entrada</li>
                     <li class="menu__item">Saída</li>
                     <li class="menu__item">Futuro</li>
-                    <li class="menu__item">
-                        <img src="" alt="Filtrar Extrato">
+                    <li class="menu__item menu__item--no-effect">
+                        <img src="./assets/images/svg/filter-icon.svg" alt="Filtrar Extrato">
                     </li>
                 </ul>
             </nav>
@@ -26,18 +26,124 @@
                     <span  class="bank-statement__text">Hoje - 6 de Agosto</span>
                     <span class="bank-statement__text bank-statement__text--strong">R$ 3.446,00</span>
                 </header>
+                <section class="bank-statement__content">
+                    <ul class="bank-statement__list">
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-down-in.svg" alt="Entrada" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--highlight bank-position__text--big">R$ <strong>30,00</strong></span>
+                                <span class="bank-position__text bank-position__text--highlight">Transferência recebida</span>
+                                <span class="bank-position__text bank-position__text--gray">Lucas vallim da costa</span>
+                            </div>
+                            <div class="bank-position__hour">17:35</div>
+                        </li>
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-down-in.svg" alt="Entrada" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--highlight bank-position__text--big">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text bank-position__text--highlight">Transferência recebida</span>
+                                <span class="bank-position__text bank-position__text--gray">Sue Brock</span>
+                            </div>
+                            <div class="bank-position__hour">13:17</div>
+                        </li>
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-return.svg" alt="Saída" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--big bank-position__text--overline">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text">Transferência estornada</span>
+                                <span class="bank-position__text bank-position__text--gray">Sue Brock</span>
+                            </div>
+                            <div class="bank-position__hour">13:17</div>
+                        </li>
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/bar-code.svg" alt="Pagamento" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--big">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text">Boleto pago</span>
+                                <span class="bank-position__text bank-position__text--gray">Sue Daniel</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                    </ul>
+                </section>
                 <header class="bank-statement__header">
                     <span  class="bank-statement__text">Segunda-feira - 2 de Agosto</span>
                     <span class="bank-statement__text bank-statement__text--strong">R$ 3.110,08</span>
                 </header>
+                <section class="bank-statement__content">
+                    <ul class="bank-statement__list">
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-down-in.svg" alt="Entrada" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--highlight bank-position__text--big">R$ <strong>30,00</strong></span>
+                                <span class="bank-position__text bank-position__text--highlight">Transferência recebida</span>
+                                <span class="bank-position__text bank-position__text--gray">Barbara McCormick</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-up-out.svg" alt="Saída" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--big">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text">Transferência enviada</span>
+                                <span class="bank-position__text bank-position__text--gray">Stella Morris</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                    </ul>
+                </section>
                 <header class="bank-statement__header">
                     <span  class="bank-statement__text">Sexta-feira - 30 de Julho</span>
                     <span class="bank-statement__text bank-statement__text--strong">R$ 3.050,30</span>
                 </header>
+                <section class="bank-statement__content">
+                    <ul class="bank-statement__list">
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/bar-code.svg" alt="Pagamento" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--big">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text">Boleto pago</span>
+                                <span class="bank-position__text bank-position__text--gray">Harriett Bates</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-down-in.svg" alt="Entrada" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--highlight bank-position__text--big">R$ <strong>30,00</strong></span>
+                                <span class="bank-position__text bank-position__text--highlight">Transferência recebida</span>
+                                <span class="bank-position__text bank-position__text--gray">Willie Fisher</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/arrow-up-out.svg" alt="Saída" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--big">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text">Transferência enviada</span>
+                                <span class="bank-position__text bank-position__text--gray">Evan Salazar</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                    </ul>
+                </section>
                 <header class="bank-statement__header">
                     <span  class="bank-statement__text">Ontem - 5 de Agosto</span>
                     <span class="bank-statement__text bank-statement__text--strong">R$ 3.124,34</span>
                 </header>
+                <section class="bank-statement__content">
+                    <ul class="bank-statement__list">
+                        <li class="bank-statement__item bank-position">
+                            <img src="./assets/images/svg/bar-code.svg" alt="Pagamento" class="bank-position__icon">
+                            <div class="bank-position__info">
+                                <span class="bank-position__text bank-position__text--big">R$ <strong>26,00</strong></span>
+                                <span class="bank-position__text">Boleto pago</span>
+                                <span class="bank-position__text bank-position__text--gray">Nicholas Mills</span>
+                            </div>
+                            <div class="bank-position__hour">09:22</div>
+                        </li>
+                    </ul>
+                </section>
             </section>
         </main>
     </body>
