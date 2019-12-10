@@ -1,0 +1,20 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  background-color: $color-dark;
+}
+
+.wrapper {
+  border-radius: 10px;
+  background-color: $color-light;
+  height: 100vh;
+  max-width: 375px;
+  overflow-x: auto;
+  width: 100%;
+}

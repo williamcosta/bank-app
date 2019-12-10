@@ -5,21 +5,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  display: flex;
-  font-family: 'Lato', sans-serif;
-  justify-content: center;
-  background-color: #000;
-}
-
-.wrapper {
-  border-radius: 10px;
-  background-color: #FFF;
-  height: 100vh;
-  max-width: 375px;
-  overflow-x: auto;
-  width: 100%;
-}
+@import 'generic/index';
 
 @import './components/header';
 @import './components/navigation';
