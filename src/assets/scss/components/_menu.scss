@@ -2,9 +2,8 @@
     &__item {
         color: $color-shade;
         cursor: pointer;
-        line-height: 20px;
         transition: all .3s ease-in-out;
-        align-items: center;
+        height: 20px;
 
         &:hover {
             color: $color-interaction;
