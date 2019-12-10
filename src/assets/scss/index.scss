@@ -1,9 +1,6 @@
 @import 'reset-css';
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import 'config/variables';
 
 @import 'generic/index';
 

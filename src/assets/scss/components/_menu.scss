@@ -1,6 +1,6 @@
 .menu {
     &__item {
-        color: #888E93;
+        color: $color-shade;
         cursor: pointer;
         font-size: 14px;
         line-height: 20px;
@@ -8,8 +8,8 @@
         align-items: center;
 
         &:hover {
-            color: #FE3E6D;
-            border-bottom: 1px solid #FE3E6D;
+            color: $color-interaction;
+            border-bottom: 1px solid $color-interaction;
         }
 
         &--no-effect {

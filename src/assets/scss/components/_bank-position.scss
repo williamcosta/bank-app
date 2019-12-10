@@ -16,7 +16,7 @@
 
     &__hour {
         align-self: center;
-        color: #888E93;
+        color: $color-shade;
         font-size: 12px;
         line-height: 20px;
         margin-left: auto;
@@ -36,11 +36,11 @@
         }
 
         &--gray {
-            color: #888E93;
+            color: $color-shade;
         }
 
         &--highlight {
-            color: #1EA4F3;
+            color: $color-highlight;
         }
 
         &--overline {
